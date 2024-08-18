@@ -1,7 +1,3 @@
-Certainly! Below is a README document for the GitHub repository:
-
----
-
 # College Information Audio Query Service
 
 This repository contains a Flask-based web application that allows users to ask questions about a college by submitting an audio file. The application processes the audio query, retrieves relevant information from specified URLs, and responds with an audio message.
@@ -43,18 +39,6 @@ This repository contains a Flask-based web application that allows users to ask 
     ```
 
 ## Usage
-
-1. **Run the Flask application**:
-    ```sh
-    python app.py
-    ```
-
-2. **Send an audio query**:
-    - Use an API testing tool like Postman or curl to send a POST request to `http://127.0.0.1:5000/analyze_audio` with an audio file.
-    - Example using curl:
-      ```sh
-      curl -X POST -F 'audio_data=@path_to_audio_file.wav' http://127.0.0.1:5000/analyze_audio --output response.mp3
-      ```
 
 3. **Receive the audio response**:
     - The response will be an audio file (`response.mp3`) containing the answer to the query.
